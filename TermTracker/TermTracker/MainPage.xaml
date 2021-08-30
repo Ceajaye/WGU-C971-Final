@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermTracker.MainPage">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name ="btnNewTerm" Text="Add Term" Clicked="btnNewTerm_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="MyClassApp"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <ListView x:Name="termsListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="{Binding TermName}" VerticalOptions="Center" TextColor="Black"/>
+                                <Label Text="{Binding Start,StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center" TextColor="Black"/>
+                                <Label Text="{Binding End,StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center" TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
+    
+    
+    
+    
+   

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermTracker.AddCourse">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,20,20,0">
+                <Label Text="Add A Course"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Course Name" 
+               x:Name="txtCourseTitle"/>
+                <Picker Title="Course Status" x:Name="pickerCourseStatus">
+                    <Picker.Items>
+                        <x:String>In Progress</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Dropped</x:String>
+                        <x:String>Plan To Take</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Start Date" />
+                <DatePicker x:Name="dpStartDate" Format="D"></DatePicker>
+                <Label Text="End Date" />
+                <DatePicker x:Name="dpEndDate" Format="D"></DatePicker>
+                <Entry Placeholder="Course Instructor" 
+               x:Name="txtCourseInstructorName"/>
+                <Entry Placeholder="Instructor Email" 
+               x:Name="txtInstructorEmail"/>
+                <Entry Placeholder="Instructor Phone" 
+               x:Name="txtInstructorPhone"/>
+                <Entry Placeholder="Notes" 
+               x:Name="txtNotes"/>
+                <Picker Title="Get Notifications" x:Name="pickerNotifications">
+                    <Picker.Items>
+                        <x:String>No</x:String>
+                        <x:String>Yes</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Save" 
+                x:Name="btnSave"
+                Clicked="btnSave_Clicked"/>
+                <Button Text="Exit" 
+                x:Name="btnExit"
+                Clicked="btnExit_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

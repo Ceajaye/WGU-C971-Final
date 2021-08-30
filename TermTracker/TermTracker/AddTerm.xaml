@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermTracker.AddTerm">
+    <ContentPage.Content>
+        <StackLayout Margin="20,20,20,0">
+            <Entry Placeholder="Term Number\Title" 
+               x:Name="txtTermTitle"/>
+            <Label Text="Start Date" />
+            <DatePicker x:Name="dpStartDate" Format="D"></DatePicker>
+            <Label Text="End Date" />
+            <DatePicker x:Name="dpEndDate" Format="D"></DatePicker>
+            <Button Text="Save" 
+                x:Name="btnSave"
+                Clicked="btnSave_Clicked"/>
+            <Button Text="Exit" 
+                x:Name="btnExit"
+                Clicked="btnExit_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

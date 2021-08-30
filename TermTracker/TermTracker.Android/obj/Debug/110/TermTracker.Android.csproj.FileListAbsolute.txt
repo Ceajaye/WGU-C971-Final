@@ -1,0 +1,5 @@
+C:\Users\Chari\source\repos\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+C:\Users\Chari\source\repos\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\build.props
+C:\Users\Chari\source\repos\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\adb.props
+C:\Users\Chari\source\repos\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\TermTracker.Android.csprojAssemblyReference.cache
+C:\Users\Chari\source\repos\TermTracker\TermTracker\TermTracker.Android\obj\Debug\110\_VerifyXamarinAndroidSupportVersions.stamp
